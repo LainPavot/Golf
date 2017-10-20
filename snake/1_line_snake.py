@@ -90,7 +90,7 @@ K(handle keydown):
 while "_" in globals() or (map(globals().__setitem__,
   "lain_snake", [
     (640,480), 1, 1, 1, 10, globals().__setitem__, tuple
-  ] + map(__import__,("pygame", "random", "time")))+[
+  ] + map(__import__,("pygame", "random", "time"))),
     s("P", lambda:
       x and
         I()
@@ -133,15 +133,12 @@ while "_" in globals() or (map(globals().__setitem__,
         y.update(r)
       )
     ),
-    s("K", lambda k:
-      0<k-272<5 and [
-        (lambda v:
-          (v[0]+d[0]or v[1]+d[1]) and (
-            s("d", v),
-            s("i", 0)
-        ))(((0, -1), (0, 1), (1, 0), (-1, 0))[k-273])
-      ] or
-        s("i", k==32)
-    ),
+    s("K", lambda k:(
+      0<k-272<5 and (lambda v:
+          (v[0]+d[0]or v[1]+d[1]) and 
+            s("d", v)
+        )(((0, -1), (0, 1), (1, 0), (-1, 0))[k-273]),
+      s("i", k==32)
+    )),
     I()
-  ]):P()
+  ):P()
