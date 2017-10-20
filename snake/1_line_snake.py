@@ -13,7 +13,9 @@
 # x=lost
 # b=body
 # d=sens (direction)
-# o=head
+# o=head position
+# w=window
+# f=food position
 # P=Play
 # I=Initialize
 # F=new Food
