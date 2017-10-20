@@ -21,6 +21,71 @@
 # F=new Food
 # C=Colorize
 # K=handle Keydown
+"""
+Not to have a class, we use globals as context.
+If fact, having "self.*" (or "s.*" for short) is still a lot of code.
+So we removed the context class and use globals instead.
+It also allow not to give some parameters to functions.
+
+While 1:
+  if _ not in globals:
+    set l i _ s n a k and e variables in globals.
+    set P I F C and K functions in globals.
+    Calls I
+  Calls P(lay)
+
+Play:
+  if x(dead):
+    Calls I(nitialize)
+  else:
+    if not i(pause):
+      remove tail, add head to body
+      erase tail
+      make head move
+      set x = lost (head in body or out of window)
+      if not x:
+        color head in green
+    for event in pygame.event.get():
+      if event.type = exit:
+        exit
+      if event.type = keydown:
+        Calls K(eydown handeling) (event.key)
+      if food is eaten:
+        extends body
+        Calls F(create new food)
+      sleep(0.05)
+Initialize:
+  set y = pygame.display
+  initialise pygame
+  set w = window(resolution)
+  set i,x,b,d,o = 
+    True, False, [], (0,0), center of window
+  # pause|lost | body|sens| head
+  color head in green
+  Calls F(create new food)
+  update window
+
+F(new Food):
+  set f = random x ; random y
+  color food in red
+
+Colorize:
+  if rectangle is x, y:
+    set rectange = x, y, size, size
+  colorize rectangle in color
+  update rectangle
+
+K(handle keydown):
+  if key is up:
+    sens = 0, -1
+  elif key is down:
+    sens = 0, 1
+  elif key is right:
+    sens = 1, 0
+  elif key is left:
+    sens = -1, 0
+  pause = key is space
+"""
 
 while "_" in globals() or (map(globals().__setitem__,
   "lain_snake", [
