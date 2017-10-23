@@ -122,7 +122,7 @@ while "_" in globals() or (map(globals().__setitem__,
       F(),
       y.flip())),
     s("F", lambda:(
-      s("f", n(k.randrange(0, x-1, _)for x in l)),
+      s("f", n(k.randrange(0, x-_, _)for x in l)),
       C(f, 255<<16))
     ), 
     s("C", lambda r, c=0xff00, h=1:
