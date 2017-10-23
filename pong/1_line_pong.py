@@ -77,9 +77,9 @@ while "p" in globals() or (
         D()
       )
     ),
-    64, 8, lambda:([w.subsurface(*x).fill((255, )*3)
-      for x in(e+(j, h), f+(j, h), k+(j, j), (_[0]/2-1, 0, 2, _[1]))
-      ],
+    64, 8, lambda:([
+      w.subsurface(*x).fill((255, )*3)
+      for x in(e+(j, h), f+(j, h), k+(j, j), (_[0]/2-1, 0, 2, _[1]))],
       c.flip()
     ), lambda:(
       k[0]+n.cos(m),
