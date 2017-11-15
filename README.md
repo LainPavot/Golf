@@ -1,14 +1,15 @@
-1 - liners
+Code Golf
 =======
 
 
-A set of 1-line programs. Just for the fun.
+Some Code Golf programs.
+Just for the fun.
 
 
 Metadata
 -----------
 
- * **@name**: 1 - liners
+ * **@name**: Code Golf
  * **@version**: /
  * **@authors**: balto (lain)
  * **@date creation**: 2017/10/20
@@ -20,7 +21,7 @@ Requirement
 -----------
  * Debian
 
-you needs python and pygame for some programs.
+you needs python and pygame for some programs (snake, pong, 10 PRINTS).
 
 ```shell
 apt-get install python, python-pip
@@ -36,7 +37,7 @@ Deploy
 Use
 -----------
 
- * Being 1-liners, these programs are standalone programs.
+ * These programs are standalone programs.
  * Just run with the good interpretor (python, perl, ruby, ...)
 
 
